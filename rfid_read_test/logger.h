@@ -148,3 +148,7 @@ class logger{
 		int COMMAND_TIMEOUT = 500;
 };
 #endif
+
+#ifndef logger_h //load header if we have not defined RFIDuino_h
+#define logger_h //define RFIDuino_h, to prevent code being loaded if this library is loaded a second time
+#endif

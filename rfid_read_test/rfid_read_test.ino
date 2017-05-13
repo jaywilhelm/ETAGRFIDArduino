@@ -15,7 +15,8 @@ void setup()
 {
   pinMode(SHD_PIN, OUTPUT);
   digitalWrite(SHD_PIN, LOW);   // turn the RFID ON
-
+  pinMode(DEMOD_OUT_PIN,INPUT);
+  
   pinMode(LED_RFID, OUTPUT);
   digitalWrite(LED_RFID, HIGH);   // turn the LED off
 
@@ -47,3 +48,4 @@ void loop()
     delay(L.get_RFID_READ_FREQ());
   }
 }// end loop()
+
